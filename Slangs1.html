@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slang Dictionary</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #2d2d2d;
+        font-family: "Bebas Neue", sans-serif;
+        color: white; /* Default text color */
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 72px;
+        background: linear-gradient(45deg, #00ffff, #ff00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 40px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(300px, 1fr)
+        ); /* Responsive columns */
+        gap: 30px;
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      .term-box {
+        background: #3a3a3a;
+        border: 1px solid #00ffff;
+        border-radius: 15px; /* Slightly more rounded corners */
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+      }
+
+      .term-box:hover {
+        transform: translateY(-5px); /* Lift on hover */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+      }
+
+      .term {
+        font-size: 64px; /* Slightly larger term font */
+        background: linear-gradient(45deg, #00ffff, #ff00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+      }
+
+      .definition {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 28px; /* Slightly smaller definition font for balance */
+        line-height: 1.4;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 50px;
+        }
+        .term {
+          font-size: 50px;
+        }
+        .definition {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 40px;
+        }
+        .term {
+          font-size: 40px;
+        }
+        .definition {
+          font-size: 20px;
+        }
+        .container {
+          grid-template-columns: 1fr; /* Single column on very small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Slang Dictionary</h1>
+    <div class="container">
+      <div class="term-box">
+        <div class="term">Sigma</div>
+        <div class="definition">
+          Someone independent and self-reliant, who doesn't follow trends or
+          seek validation from others.
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">Cap</div>
+        <div class="definition">
+          A lie or exaggeration. "No cap" means "no lie" or "for real."
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">Drip</div>
+        <div class="definition">A stylish, fashionable outfit or look.</div>
+      </div>
+      <div class="term-box">
+        <div class="term">Simp</div>
+        <div class="definition">
+          Someone who is overly eager to please another person, often in hopes
+          of gaining their affection.
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">GOAT</div>
+        <div class="definition">
+          Greatest Of All Time. Used to describe someone who is exceptionally
+          skilled or successful in their field.
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">Vibe Check</div>
+        <div class="definition">
+          An assessment of the general atmosphere or mood of a situation or
+          person.
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">Bet</div>
+        <div class="definition">
+          Agreed, okay, or indeed. Can also be used to express excitement or
+          affirmation.
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">Slay</div>
+        <div class="definition">
+          To do something exceptionally well or impressively; to succeed
+          brilliantly.
+        </div>
+      </div>
+      <div class="term-box">
+        <div class="term">Ghosting</div>
+        <div class="definition">
+          Ending a personal relationship by suddenly withdrawing from all
+          communication without explanation.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
